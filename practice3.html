@@ -1,0 +1,62 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <h1 style="color: white;">EECS 348 Lab Seven Practice 3</h1>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/9bda03450d.js" crossorigin="anonymous"></script>
+  <style>
+    .info-container {
+      background-color: aliceblue;
+      padding: 20px;
+      border-radius: 10px;
+      color: black;
+      box-shadow: 0 4px 8px 0 rgba(104, 189, 255, 0.2);
+      max-width: 800px;
+      width: 100%;
+    }
+
+    .input-container {
+      margin-top: 20px;
+    }
+
+    .password-container {
+      position: relative;
+    }
+
+    .password-container i {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<script type="text/javascript" src="functions.js"></script>
+  <div class="container">
+    <div class="info-container">
+      <div class="input-container">
+        <label for="pass1">Password:</label>
+        <div class="password-container">
+          <input type="password" id="pass1" required>
+          <i class="fas fa-eye-slash" id="pass1-icon" onclick="togglePassword('pass1')"></i>
+        </div>
+        <br>
+        <label for="pass2">Confirm Password:</label>
+        <div class="password-container">
+          <input type="password" id="pass2" required>
+          <i class="fas fa-eye-slash" id="pass2-icon" onclick="togglePassword('pass2')"></i>
+        </div>
+        <br>
+        <button class="button" onclick="validate()">Verify Passwords</button>
+      </div>
+    </div>
+    <a href="index.html">
+      <button class="button">Go back to index</button>
+    </a>
+  </div>
+
+  
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <h1 style="color: white;">EECS 348 Lab Seven Practice 4</h1>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/9bda03450d.js" crossorigin="anonymous"></script>
+  <script src="functions.js"></script>
+  <style>
+    .info-container {
+      background-color: aliceblue;
+      padding: 20px;
+      border-radius: 10px;
+      color: black;
+      box-shadow: 0 4px 8px 0 rgba(104, 189, 255, 0.2);
+      max-width: 800px;
+      width: auto;
+    }
+
+    .input-container {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="info-container">
+          <div class="input-container">
+            <form method="post" action="practice4.php">
+              <label for="number">Enter a number:</label>
+              <input type="number" id="number" name="number" min="1" required>
+              <br>
+              <input type="submit" class="button" value="Generate Table">
+            </form>
+          </div>
+        </div>
+    <a href="index.html">
+      <button class="button">Go back to index</button>
+    </a>
+  </div>
+</body>
+</html>

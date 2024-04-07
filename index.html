@@ -1,0 +1,64 @@
+<html>
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+        .more-info {
+            display: none;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 300px;
+            text-align: left;
+            margin-top: 10px;
+            
+        }
+        .button:hover + .more-info {
+             display: block;
+        }
+        .button-container {
+            max-width: 1000px;
+            margin-top: 1px;
+            text-align: left;
+            font-family: Arial, sans-serif;
+        }
+        .button-container button {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+   
+</head>
+<body>
+    <h2 style="text-align:center; color: white;">Welcome to my index page!</h2>
+    <h2 style="text-align:center; color: white;">EECS 348 Lab 7</h2>
+    <div style="color: white; font-size: 18px; margin-bottom: 20px;">
+        Hello everyone! This page is the index page of Lab7. 
+        Hover to each buttons to get details of each practices for this lab 7. Click to enter the practice page.
+      </div>
+    <div class="button-container">
+        <button class="button" onclick="window.location.href='practice1.html'">Practice One</button>
+        <div class="more-info">
+            <h3>Practice One: HTML EECS Profiles (10 points)</h3>
+            <p>Create a profile page that is styled with CSS. Have fun with this! In your profile, you must include your name, a photo, and contact info. You can also showcase anything good for your professional career, e.g., courses, projects, and work experience. You can also use JS and PHP in this practice. At the same time, you must include at least one link and video.</p>
+        </div>
+        
+        <button class="button" onclick="window.location.href='practice2.html'">Practice Two</button>
+        <div class="more-info">
+            <h3>Practice Two: CSS Font Control (10 points)</h3>
+            <p>Create a web page that has a paragraph with some dummy text. Near the paragraph, have a text field to accept RGB values to form any colors for the paragraph and the border. You also need to control the width of the border.</p>
+        </div>
+        
+        <button class="button" onclick="window.location.href='practice3.html'">Practice Three</button>
+        <div class="more-info">
+            <h3>Practice Three: JavaScript Password Verification (10 points)</h3>
+            <p>Create a JavaScript program that allows the user to enter a password two times to verify them. If the password is not at least eight characters long or if two passwords are different, alert the user. Otherwise, tell the user that two passwords are matched.</p>
+        </div>
+        
+        <button class="button" onclick="window.location.href='practice4.html'">Practice Four</button>
+        <div class="more-info">
+            <h3>Practice Four: PHP Multiplication Table (10 points)</h3>
+            <p>Create a PHP program that receives a number and displays a multiplication table from 1 to the number. You also need to print the row and column indexes in the table.</p>
+        </div>
+    </div>
+</body>
+</html>

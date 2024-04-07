@@ -1,0 +1,49 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <h1 style="color: white;">EECS 348 Lab Seven Practice 2</h1>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/9bda03450d.js" crossorigin="anonymous"></script>
+    <style>
+        .info-container {
+            background-color: aliceblue;
+            padding: 20px;
+            border-radius: 10px;
+            color: black;
+            box-shadow: 0 4px 8px 0 rgba(104, 189, 255, 0.2);
+            max-width: 800px;
+            width: 100%;
+        }
+        .input-container {
+            margin-top: 20px;
+        }
+        #paragraph {
+            border-style: solid;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="info-container">
+            <div id="paragraph">This is THE paragraph with some dummy text.</div>
+            <div class="input-container">
+                <script type="text/javascript" src="functions.js"></script>
+                Border R(0-255): <input type="text" id="border_R" value=""> <br>
+                Border G(0-255): <input type="text" id="border_G" value=""> <br>
+                Border B(0-255): <input type="text" id="border_B" value=""> <br>
+                Border Width: <input type="text" id="border_width" value=""> <br>
+                Background R(0-255): <input type="text" id="bg_R" value=""> <br>
+                Background G(0-255): <input type="text" id="bg_G" value=""> <br>
+                Background B(0-255): <input type="text" id="bg_B" value=""> <br>
+                <button class="button" onclick="update()">Update Styles</button>
+            </div>
+        </div>
+        
+        <a href="index.html">
+            <button class="button">Go back to index</button>
+        </a>
+    </div>
+    
+</body>
+</html>
